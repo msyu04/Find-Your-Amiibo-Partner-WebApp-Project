@@ -1,0 +1,87 @@
+.App {
+  font-family: "Yatra One", system-ui;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
+    ),
+    url("https://www.gamespot.com/a/uploads/original/313/3136061/3717198-smallbattlefield.jpg");
+  min-height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+}
+.yatra-one-regular {
+  font-family: "Yatra One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+header {
+  background-color: paleturquoise;
+  margin-top: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: space-around;
+  height: 650px;
+  margin: 0;
+}
+body {
+  background-color: #cccccc;
+  overflow: auto;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+button,
+select {
+  background-color: rgb(224, 247, 202);
+  border: 2px solid rgb(152, 207, 152);
+  border-radius: 4px;
+  padding: 8px 10px;
+  font-size: 17px;
+  transition-duration: 4s;
+}
+.button:hover {
+  background-color: palegreen;
+}
+#amiibo_card {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 300px; /* Set a fixed width */
+  max-height: 750px; /* Set a fixed height */
+}
+#option_bar {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.character_info {
+  background-color: paleturquoise;
+  padding: 8px;
+  border-radius: 8px;
+}
+@media (max-width: 500px) {
+  #option_bar {
+    gap: 0;
+  }
+  button,
+  select {
+    padding: 0;
+    font-size: 15px;
+  }
+}
